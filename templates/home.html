@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %} HOME {% endblock %}
+
+{% block content %} 
+
+<h1> Home Page / Submit </h1>
+<form action="/story" id="submit">
+  <label for="place">Place: </label>
+  <input type="text" placeholder="Location" name="place" required>
+  <label for="noun">Noun: </label>
+  <input type="text" placeholder="Person/Place/Thing" name="noun" required>
+  <label for="verb">Verb: </label>
+  <input type="text" placeholder="Action Word" name="verb" required>
+  <label for="adjective">Adjective: </label>
+  <input type="text" placeholder="Describing Word" name="adjective" required> 
+  <label for="plural_noun">Plural Noun: </label>
+  <input type="text" placeholder="More Than One Person/Place/Thing" name="plural_noun" required>
+  <hr>
+  <button> Submit </button>
+</form>
+
+{% endblock %}
